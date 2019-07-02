@@ -30,8 +30,9 @@
       color: #333;
       box-shadow: 0 0 15px 5px #0001;
       display: flex;
-      font-family: Helvetica, Verdana, Arial;
-      font-size: 14px;
+      font-family: Content-font, Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.625;
     }
 
     p {
@@ -353,6 +354,7 @@
         <dt>乐高<time>2016</time></dt>
         
         <dd>
+          <p style="background: #000"><img src="https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_2e86d7fc08b3540358c84052b7ee357b.png" width="100%"></p>
           <p>这支新的 Web 开发团队面临的第一个大挑战是如何满足业务日渐上升的活动页面开发需求。河狸家是一家跨类目的美业服务平台，有大量的促销场景。落到 Web 开发层面，我们需要开发大量的活动页面，这部分工作占到当时前端所有工作的 60% 左右，需要长期投入至少 2 名开发工程师。活动页面往往是一次性的，这不仅浪费了开发资源，也让工程师无法有产品归属感。我们需要找到高效的方式, 将团队从一次性活动开发的工作中解脱出来。</p>
           <p>在这样的情况下，我们启动了乐高项目。
             <ol>
@@ -367,14 +369,56 @@
           <q>「我准备把乐高开源」—— 杜松 </q>
         </dd>
 
+        <dt>
+        M 站 (m.helijia.com)
+        <time>2016</time>
+        </dt>
+        <dd>
+        早期(在 Web 团队正式成立前) 河狸家只有一些简单的 mobile 页面，这些页面存在的问题有：
+        <ol>
+          <li>没有做性能优化, 性能较差</li>
+          <li>打包流程是手动的，打包后的文件也存入版本控制，导致开发者之间冲突频繁</li>
+          <li>组件化程度比较低, 开发效率低</li>
+        </ol>
+        <p>
+        因此我们启动了 <code>mobile-v3</code> 项目，重写了 mobile 站，新站域名: m.helijia.com。我们做了很多优化:
+        </p>
+        <ol>
+          <li>采用 Webpack 打包，将资源做 hash 化处理，并统一分发到 CDN</li>
+          <li>建立 Git 分支和环境的映射关系，分支即环境。结合 Gitlab Pipeline 机制，实现持续集成、持续发布。</li>
+          <li>引入 React，以函数式、组件化的方式进行开发，大大提升了开发效率</li>
+          <li>建立内部 NPM 仓库，沉淀基础 ui 库、业务组件库、各类 util 库</li>
+          <li>强制 code review，所有需求必须 100% 经过 review 才能上线</li>
+        </ol>
+
+        <p>虽然 M 站在一个月左右就快速开发上线了，但此后维护却延续至今。我们不断完善基础设施，升级 babel、Webpack 等主要依赖库，不断抽取公共组件，不断优化开发流程。这个过程至今仍在继续。</p>
+        <p>我们之所以如此大费周章，是因为我们认为：持续使用的软件必定需要持续的维护，拉长时间来看，长期的维护成本远远大于初期的开发成本。因此我们尽一切手段降低长期维护成本。</p>
+        </dd>
 
         <dt>
           成长游戏
           <time>2017</time>
         </dt>
         <dd>
-        </dd>
+        <p><img src="https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_43e4c19c538ae39e2d624df48ffe8846.jpg" width="100%"></p>
+        <p>和很多创业公司一样，我们团队有很多实习生、应届生，在我们团队中，90后占了一半。如何快速、有效提升大家的编程水平？是否有一种机制让编程技能能稳定提升，直到一个人成为 Web 编程的专家?</p>
 
+        <p>我们认为：是的，编程也是一种技能。技能的成长符合 <a href="https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus 模型</a>。处于技能不同阶段的人有不同的思维模式，也有对应的提升方向。除了知识和技巧的积累，更重要的是专家级的思维方式 —— 像专家程序员一样思考。</p>
+        <p>我们启动了「成长游戏」计划，将 Dreyfus 技能模型和刻意练习、游戏化结合，设计了一套成长游戏机制。简单来说，就是:
+          <ol>
+            <li>将知识体系进行整理，取出一些点，设计成一个任务，解决一道题目</li>
+            <li>玩家（团队成员）抽空完成题目。题目有不同难度，对应不同的时间，一般不超过 1 天。</li>
+            <li>玩家交任务给导师（团队中的专家级程序员），导师 review 任务完成情况。</li>
+            <li>根据大家的完成情况，进行打分、排名、奖励。进行下一轮游戏。</li>
+          </ol>
+        </p>
+        <small>部分成长游戏的笔记可以在 <a href="https://github.com/helijia-web/quests">这里</a> 看到</small>
+
+        <p>这套游戏的精髓在于导师 review 环节。通过和专家的思维模式进行对比，新人逐渐养成了同样的思维习惯。</p>
+
+        <p>通过成长游戏，团队的新人从系统化的任务学习中受益匪浅，进步很快。优秀新人轮番涌现。在河狸家入职一周年的新人，都能独当一面。</p>
+        <q>…… —— 落葵</q>
+        </dd>
       </dl>
     </section>
 
