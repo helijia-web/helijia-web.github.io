@@ -133,6 +133,11 @@
       top: 0.5em;
       transform: translate(-50%);
     }
+
+    #skills td:first-child {
+      text-align: right;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -179,20 +184,26 @@
 
     <section id="skills">
       <h1>Skills</h1>
-      <ul>
-        <li>
-          JavaScript
-        </li>
-        <li>
-          HTML
-        </li>
-        <li>
-          CSS
-        </li>
-        <li>
-          Elixir
-        </li>
-      </ul>
+      <table id="skills-list">
+        <tbody>
+          <tr>
+            <td>JavaScript</td>
+            <td>重点技能, 全员精通</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>基础技能, 全员精通</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>基础技能, 全员精通</td>
+          </tr>
+          <tr>
+            <td>Elixir</td>
+            <td>高级技能, 全栈成员熟练</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
   </aside>
