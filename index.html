@@ -72,7 +72,7 @@
     }
 
     section {
-      margin-bottom: 3em;
+      margin-bottom: 5em;
     }
 
     section > h1 {
@@ -137,6 +137,52 @@
     #skills td:first-child {
       text-align: right;
       font-weight: bold;
+    }
+
+    #key-projects dl {
+      margin-left: 5em;
+      position: relative;
+    }
+
+    #key-projects dl::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      top: 1em;
+      left: 0;
+      height: 100%;
+      border-left: 1px solid currentColor;
+    }
+
+    #key-projects dl time {
+      position: absolute;
+      left: -2em;
+      top: 50%;
+      transform: translate(-100%, -50%);
+    }
+
+    #key-projects dl dd {
+      margin-left: 1em;
+      margin-bottom: 5em;
+    }
+
+    #key-projects dl dt {
+      margin-left: 1em;
+      font-weight: bold;
+      position: relative;
+    }
+
+    #key-projects dl dt::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: currentColor;
+      border-radius: 50%;
+      top: 50%;
+      left: -1em;
+      transform: translate(-50%, -50%);
     }
   </style>
 </head>
@@ -220,20 +266,31 @@
       <h1>Key Projects</h1>
 
       <dl>
-        <dd>乐高</dd>
-        <time>2016</time>
-        <p>这支新的 Web 开发团队面临的第一个大挑战是如何满足业务日渐上升的活动页面开发需求。河狸家是一家跨类目的美业服务平台，有大量的促销场景。落到 Web 开发层面，我们需要开发大量的活动页面，这部分工作占到当时前端所有工作的 60% 左右，需要长期投入至少 2 名开发工程师。活动页面往往是一次性的，这不仅浪费了开发资源，也让工程师无法有产品归属感。我们需要找到高效的方式, 将团队从一次性活动开发的工作中解脱出来。</p>
-        <p>在这样的情况下，我们启动了乐高项目。
-          <ol>
-            <li>第一步将历史活动进行梳理，整理出常见的模块，通过组件化开发提升效率；</li>
-            <li>第二步开发一个系统，结合第一步的组件化，可以在线将模块进行组合，「搭」出页面，赋能需求方。</li>
-          </ol>
-        </p>
-        <p>经过一个月的开发，我们成功上线了「乐高」系统。这个系统至今仍然在发挥着巨大的作用，已经累计帮助运营产生了数千个活动页面，节省了近万天的开发资源，也进一步改变了我们的开发模式：从直接面向业务，转变为开发组件，以组件化、工程化的方式赋能业务。</p>
+        <dt>乐高<time>2016</time></dt>
+        
+        <dd>
+          <p>这支新的 Web 开发团队面临的第一个大挑战是如何满足业务日渐上升的活动页面开发需求。河狸家是一家跨类目的美业服务平台，有大量的促销场景。落到 Web 开发层面，我们需要开发大量的活动页面，这部分工作占到当时前端所有工作的 60% 左右，需要长期投入至少 2 名开发工程师。活动页面往往是一次性的，这不仅浪费了开发资源，也让工程师无法有产品归属感。我们需要找到高效的方式, 将团队从一次性活动开发的工作中解脱出来。</p>
+          <p>在这样的情况下，我们启动了乐高项目。
+            <ol>
+              <li>第一步将历史活动进行梳理，整理出常见的模块，通过组件化开发提升效率；</li>
+              <li>第二步开发一个系统，结合第一步的组件化，可以在线将模块进行组合，「搭」出页面，赋能需求方。</li>
+            </ol>
+          </p>
+            <p>经过一个月的开发，我们成功上线了「乐高」系统。这个系统至今仍然在发挥着巨大的作用，已经累计帮助运营产生了数千个活动页面，节省了近万天的开发资源，也进一步改变了我们的开发模式：从直接面向业务，转变为开发组件，以组件化、工程化的方式赋能业务。</p>
 
-        <p>在河狸家 Web 团队，我们极为重视开发工程师的时间和效率。标配是 Macbook Pro, 大显示器。我们尽可能少地开团队内部的会议，没有周报（但是会提供场合 show 自己的产出）。</p>
+          <p>在河狸家 Web 团队，我们极为重视开发工程师的时间和效率。标配是 Macbook Pro, 大显示器。我们尽可能少地开团队内部的会议，没有周报（但是会提供场合 show 自己的产出）。</p>
 
-        <q>「我准备把乐高开源」—— 杜松 </q>
+          <q>「我准备把乐高开源」—— 杜松 </q>
+        </dd>
+
+
+        <dt>
+          成长游戏
+          <time>2017</time>
+        </dt>
+        <dd>
+        </dd>
+
       </dl>
     </section>
 
