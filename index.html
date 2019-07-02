@@ -27,25 +27,40 @@
       max-width: 800px;
       margin: 0 auto;
       background: #fff;
+      color: #333;
       box-shadow: 0 0 15px 5px #0008;
       display: flex;
+      font-family: Helvetica, Verdana, Arial;
+      font-size: 14px;
     }
 
-    body > aside, body > main {
-      padding: 0.5em;
+    p {
+      line-height: 1.2;
+    }
+
+    a {
+      color: inherit;
     }
 
     aside {
       background: #dfdfe1;
+      padding: 0 1em 1em 3em;
+      font-size: 95%;
+      color: #666;
+    }
+
+    aside > section {
     }
 
     h1 {
       text-transform: uppercase;
+      font-weight: normal;
     }
 
     h3 {
       margin-top: 0.3em;
-      margin-bottom: 0.3em;
+      margin-bottom: 0;
+      font-size: 100%;
     }
 
     ul {
@@ -55,29 +70,107 @@
 
     li {
     }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    section > h1 {
+      color: #333;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      text-indent: 0.3em;
+      line-height: 1.8;
+      letter-spacing: .5em;
+    }
+
+    main {
+      width: 80%;
+      padding: 3em 3em 1em 2em;
+    }
+
+    address {
+      font-style: normal;
+      font-size: 90%;
+    }
+
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+
+    #brand {
+      background-color: #fff;
+      margin: 0 -1em 2em -3em;
+      padding: 1em 1em 1em 3em;
+      text-align: center;
+    }
+
+    #brand img {
+      width: 50%;
+      height: auto;
+    }
+
+    #brand h1 {
+      margin: 0;
+      text-transform: none;
+      text-align: center;
+    }
+
+    #info ul li {
+      padding-left: 4em;
+      position: relative;
+      margin-bottom: 1em;
+    }
+
+    #info ul li .icon {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      left: 2em;
+      top: 0.5em;
+      transform: translate(-50%);
+    }
   </style>
 </head>
 <body>
   <aside>
-    <h1>Helijia Web Team</h1>
+    <div id="brand">
+      <img src="https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_b8e96e866a8997c97a9aef3d9c0cc8e3.png" width="150" height="150" />
+      <h1>Helijia Web Team</h1>
+    </div>
 
     <section id="info">
       <h1>Info</h1>
       <ul>
         <li class="home">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-importantdevices"></use>
+          </svg>
           <h3>首页</h3>
-          <a href="https://github.com/helijia-web">https://github.com/helijia-web</a>
+          <a href="https://helijia.cn/5bzsK">https://helijia.cn/5bzsK</a>
         </li>
         <li class="addr">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-place"></use>
+          </svg>
           <h3>地址</h3>
           <address>北京 - 朝阳区 - 三元桥 </address>
           <address>杭州 - 余杭区 - 溪望路</address>
         </li>
         <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-email"></use>
+          </svg>
           <h3>联系方式</h3>
           <a href="mailto:wuliu@helijia.com">wuliu@helijia.com</a>
         </li>
         <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-web"></use>
+          </svg>
           <h3>网站</h3>
           <a href="https://www.helijia.com">https://www.helijia.com</a>
         </li>
@@ -137,5 +230,7 @@
       <h1>成员</h1>
     </section>
   </main>
+
+  <script src="https://at.alicdn.com/t/font_1272505_ks4qwjfrbvh.js"></script>
 </body>
 </html>
