@@ -1,0 +1,249 @@
+html {
+  background: url(https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_d808fef0da889f09742d3a074f356bc5.png) repeat;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  min-height: 100%;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 0 15px 5px #0001;
+  display: flex;
+  font-family: Content-font, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.2;
+}
+
+q {
+  background: #e5e5e5;
+  font-style: italic;
+  line-height: 3;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+aside {
+  background: #dfdfe1;
+  padding: 0 1em 1em 3em;
+  font-size: 95%;
+  color: #666;
+}
+
+aside > section {
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h3 {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  font-size: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.with-dot {
+  list-style-type: circle;
+  padding-left: 2em;
+}
+
+li {
+}
+
+section {
+  margin-bottom: 5em;
+}
+
+section > h1 {
+  color: #333;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  text-indent: 0.3em;
+  line-height: 1.8;
+  letter-spacing: .5em;
+}
+
+main {
+  width: 80%;
+  padding: 3em 3em 1em 2em;
+}
+
+address {
+  font-style: normal;
+  font-size: 90%;
+}
+
+img.avatar {
+  width: 4em;
+  border-radius: 50%;
+}
+
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+#brand {
+  background-color: #fff;
+  margin: 0 -1em 2em -3em;
+  padding: 1em 1em 1em 3em;
+  text-align: center;
+}
+
+#brand img {
+  width: 50%;
+  height: auto;
+}
+
+#brand h1 {
+  margin: 0;
+  text-transform: none;
+  text-align: center;
+}
+
+#info ul li {
+  padding-left: 4em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+#info ul li .icon {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  left: 2em;
+  top: 0.5em;
+  transform: translate(-50%);
+}
+
+#skills td:first-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+#profile h1 {
+  border: none;
+  background-color: #dfdfe1;
+}
+
+#key-projects dl {
+  margin-left: 5em;
+  position: relative;
+}
+
+#key-projects dl::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 1em;
+  left: 0;
+  height: 100%;
+  border-left: 1px solid currentColor;
+}
+
+#key-projects dl time {
+  position: absolute;
+  left: -2em;
+  top: 0;
+  transform: translate(-100%);
+  font-weight: normal;
+  font-size: 90%;
+  text-align: center;
+  line-height: 2;
+}
+
+#key-projects dl dd {
+  margin-left: 1em;
+  margin-bottom: 5em;
+}
+
+#key-projects dl dt {
+  margin-left: 1em;
+  font-weight: bold;
+  position: relative;
+}
+
+#key-projects dl dt::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 50%;
+  left: -1em;
+  transform: translate(-50%, -50%);
+}
+
+#members ul li {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 1em;
+}
+
+#members ul li header {
+  margin-left: 1em;
+}
+
+#members ul li header h3 {
+  line-height: 1.2;
+}
+
+#members ul li header h3 span {
+  color: #ccc;
+  font-weight: normal;
+  margin-left: .5em;
+}
+
+#members ul li header small {
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  html {
+    padding: 0;
+  }
+
+  body {
+    display: block;
+  }
+
+  main {
+    width: auto;
+    padding-right: 2em;
+  }
+
+  #brand {
+    padding-left: 1em;
+  }
+
+  #key-projects dl {
+    margin-left: 3em;
+  }
+}

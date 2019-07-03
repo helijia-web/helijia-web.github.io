@@ -13,237 +13,8 @@
   <meta name="HandheldFriendly" content="true">
   <meta name="screen-orientation" content="portrait">
   <link rel="icon" href="https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_b8e96e866a8997c97a9aef3d9c0cc8e3.png">
-  <style>
-    html {
-      background: url(https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_d808fef0da889f09742d3a074f356bc5.png) repeat;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      padding: 1em;
-      min-height: 100%;
-    }
-
-    body {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      color: #333;
-      box-shadow: 0 0 15px 5px #0001;
-      display: flex;
-      font-family: Content-font, Roboto, sans-serif;
-      font-size: 16px;
-      line-height: 1.625;
-    }
-
-    p {
-      line-height: 1.2;
-    }
-
-    q {
-      background: #e5e5e5;
-      font-style: italic;
-      line-height: 3;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    aside {
-      background: #dfdfe1;
-      padding: 0 1em 1em 3em;
-      font-size: 95%;
-      color: #666;
-    }
-
-    aside > section {
-    }
-
-    h1 {
-      text-transform: uppercase;
-      font-weight: normal;
-    }
-
-    h3 {
-      margin-top: 0.3em;
-      margin-bottom: 0;
-      font-size: 100%;
-    }
-
-    ul {
-      padding: 0;
-      list-style-type: none;
-    }
-
-    li {
-    }
-
-    section {
-      margin-bottom: 5em;
-    }
-
-    section > h1 {
-      color: #333;
-      border-top: 1px solid currentColor;
-      border-bottom: 1px solid currentColor;
-      text-indent: 0.3em;
-      line-height: 1.8;
-      letter-spacing: .5em;
-    }
-
-    main {
-      width: 80%;
-      padding: 3em 3em 1em 2em;
-    }
-
-    address {
-      font-style: normal;
-      font-size: 90%;
-    }
-
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-
-    #brand {
-      background-color: #fff;
-      margin: 0 -1em 2em -3em;
-      padding: 1em 1em 1em 3em;
-      text-align: center;
-    }
-
-    #brand img {
-      width: 50%;
-      height: auto;
-    }
-
-    #brand h1 {
-      margin: 0;
-      text-transform: none;
-      text-align: center;
-    }
-
-    #info ul li {
-      padding-left: 4em;
-      position: relative;
-      margin-bottom: 1em;
-    }
-
-    #info ul li .icon {
-      position: absolute;
-      width: 2em;
-      height: 2em;
-      left: 2em;
-      top: 0.5em;
-      transform: translate(-50%);
-    }
-
-    #skills td:first-child {
-      text-align: right;
-      font-weight: bold;
-    }
-
-    #stacks ul {
-      list-style-type: circle;
-      padding-left: 2em;
-    }
-
-    #profile h1 {
-      border: none;
-      background-color: #dfdfe1;
-    }
-
-    #key-projects dl {
-      margin-left: 5em;
-      position: relative;
-    }
-
-    #key-projects dl::before {
-      content: '';
-      position: absolute;
-      width: 1px;
-      top: 1em;
-      left: 0;
-      height: 100%;
-      border-left: 1px solid currentColor;
-    }
-
-    #key-projects dl time {
-      position: absolute;
-      left: -2em;
-      top: 0;
-      transform: translate(-100%);
-      font-weight: normal;
-      font-size: 90%;
-      text-align: center;
-      line-height: 2;
-    }
-
-    #key-projects dl dd {
-      margin-left: 1em;
-      margin-bottom: 5em;
-    }
-
-    #key-projects dl dt {
-      margin-left: 1em;
-      font-weight: bold;
-      position: relative;
-    }
-
-    #key-projects dl dt::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 8px;
-      height: 8px;
-      background-color: currentColor;
-      border-radius: 50%;
-      top: 50%;
-      left: -1em;
-      transform: translate(-50%, -50%);
-    }
-
-    @media (max-width: 600px) {
-      html {
-        padding: 0;
-      }
-
-      body {
-        display: block;
-      }
-
-      main {
-        width: auto;
-        padding-right: 2em;
-      }
-
-      #brand {
-        padding-left: 1em;
-      }
-
-      #key-projects dl {
-        margin-left: 3em;
-      }
-    }
-
-    @media print {
-      html {
-        background: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      body {
-        max-width: none;
-        box-shadow: none;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" media="print" href="./index.print.css">
 </head>
 <body>
   <aside>
@@ -314,7 +85,7 @@
     <section id="stacks">
       <h1>Stacks</h1>
       <h3>Client Side</h3>
-      <ul>
+      <ul class="with-dot">
         <li><a href="https://babeljs.io/">Babel</a></li>
         <li><a href="https://webpack.js.org/">Webpack 4</a></li>
         <li><a href="https://reactjs.org/">React 16</a></li>
@@ -325,7 +96,7 @@
       </ul>
 
       <h3>Server Side</h3>
-      <ul>
+      <ul class="with-dot">
         <li><a href="https://elixir-lang.org/">Elixir 1.8</a></li>
         <li><a href="https://phoenixframework.org/">Phoenix 1.4</a></li>
         <li><a href="https://github.com/elixir-maru/maru">Maru</a></li>
@@ -335,7 +106,7 @@
       </ul>
 
       <h3>Tool Chain</h3>
-      <ul>
+      <ul class="with-dot">
         <li><a href="https://about.gitlab.com/">Gitlab CE</a></li>
         <li><a href="https://kubernetes.io/">Kubernetes 1.9</a></li>
         <li><a href="https://www.docker.com/">Docker 18</a></li>
@@ -453,8 +224,33 @@
       </dl>
     </section>
 
+    <section id="concepts">
+      <h1>Key Concepts</h1>
+
+      <ul class="with-dot">
+        <li><em>函数式 Web 开发</em> 优于 面向对象式</li>
+        <li><em>Client/Server 混合型开发</em> 优于 单一型</li>
+        <li><em>持续交付价值</em> 优于 耗时多的一次性交付</li>
+        <li><em>降低长期维护成本</em> 优先于 减少首次开发成本</li>
+        <li><em>降低长期维护成本</em> 优先于 性能优化</li>
+      </ul>
+
+      <small>更多理念，我们正在整理成在线电子书, 目前还在撰写中, <a href="https://thinking.hlj.team">点此访问</a></small>
+    </section>
+
     <section id="members">
-      <h1>成员</h1>
+      <h1>Mentors</h1>
+
+      <ul>
+        <li>
+          <img class="avatar" src="https://img-ucdn-static.helijia.com/lego/uploads/user/images/original_74ee11c8165a3438fd9bf0f1f2837f2a.jpg">
+          <header>
+            <h3>五柳<span>Team Leader</span></h3>
+            <small><a href="https://q.pnq.cc">https://q.pnq.cc</a></small>
+            <p>15 多年 Web 开发经验，曾任阿里巴巴技术专家。充满好奇心，为探索「什么是 Web 开发的正确方式」而加入河狸家。</p>
+          </header>
+        </li>
+      </ul>
     </section>
   </main>
 
