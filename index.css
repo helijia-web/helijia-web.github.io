@@ -8,12 +8,19 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+main {
   max-width: 800px;
   margin: 0 auto;
   background: #fff;
   color: #333;
   box-shadow: 0 0 15px 5px #0001;
   display: flex;
+  flex-wrap: wrap;
   font-family: Content-font, Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.625;
@@ -39,14 +46,16 @@ a {
   color: inherit;
 }
 
-aside {
+main > aside {
+  width: 35%;
+  box-sizing: border-box;
   background: #dfdfe1;
   padding: 0 1em 1em 3em;
   font-size: 95%;
   color: #666;
 }
 
-aside > section {
+main > aside > section {
 }
 
 h1 {
@@ -86,8 +95,9 @@ section > h1 {
   letter-spacing: .5em;
 }
 
-main {
-  width: 80%;
+main > article {
+  width: 65%;
+  box-sizing: border-box;
   padding: 3em 3em 1em 2em;
 }
 
@@ -99,6 +109,13 @@ address {
 img.avatar {
   width: 4em;
   border-radius: 50%;
+}
+
+footer {
+  width: 100%;
+  margin: 1em;
+  text-align: center;
+  color: #999;
 }
 
 .icon {
@@ -234,7 +251,7 @@ img.avatar {
     display: block;
   }
 
-  main {
+  main > article {
     width: auto;
     padding-right: 2em;
   }
