@@ -112,7 +112,7 @@ img.avatar {
 }
 
 footer {
-  width: 100%;
+  display: block;
   margin: 1em;
   text-align: center;
   color: #999;
@@ -247,7 +247,7 @@ footer {
   color: #999;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   html {
     padding: 0;
   }
