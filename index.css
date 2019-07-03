@@ -251,7 +251,7 @@ footer {
   color: #999;
 }
 
-@media (screen and (max-width: 850px)) {
+@media screen and (max-width: 850px) {
   html {
     padding: 0;
   }
