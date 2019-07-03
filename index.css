@@ -238,6 +238,11 @@ footer {
   margin-left: .5em;
 }
 
+#chat figure {
+  margin-top: 0;
+  margin-left: 2em;
+}
+
 #members ul li header small {
   color: #999;
 }
@@ -247,8 +252,12 @@ footer {
     padding: 0;
   }
 
-  body {
+  body > main {
     display: block;
+  }
+
+  main > aside {
+    width: auto;
   }
 
   main > article {
