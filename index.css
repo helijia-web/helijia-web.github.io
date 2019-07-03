@@ -226,6 +226,7 @@ footer {
   display: flex;
   align-items: flex-start;
   padding-left: 1em;
+  margin-bottom: 2em;
 }
 
 #members ul li header {
@@ -242,13 +243,13 @@ footer {
   margin-left: .5em;
 }
 
+#members ul li header small {
+  color: #999;
+}
+
 #chat figure {
   margin-top: 0;
   margin-left: 2em;
-}
-
-#members ul li header small {
-  color: #999;
 }
 
 @media screen and (max-width: 850px) {
